@@ -79,6 +79,7 @@
 .second__animation
   position: absolute
   top: 0px
+  display: none
   img
     &:nth-child(1)
       position: absolute
@@ -86,8 +87,25 @@
       left: 900px
       animation: sperm-1 2s 1 forwards
     &:nth-child(2)
+      position: absolute
+      top: 74px
+      left: 710px
+      animation: sperm-2 2s 1 forwards
     &:nth-child(3)
+      position: absolute
+      top: 411px
+      left: 889px
+      animation: sperm-3 3s 1 forwards
     &:nth-child(4)
+      position: absolute
+      top: 98px
+      left: 336px
+      animation: sperm-4 2s 1 forwards
+    &:nth-child(5)
+      position: absolute
+      top: 97px
+      left: 584px
+      animation: sperm-5 3s 1 forwards
 
 @keyframes sperm-1
   0%
@@ -96,5 +114,45 @@
     animation-timing-function: ease-out
   100%
     transform: translate(-15px, -10px)
+    opacity: 1
+    animation-timing-function: linear
+
+@keyframes sperm-2
+  0%
+    transform: translate(90px, 50px)
+    opacity: 0
+    animation-timing-function: ease-out
+  100%
+    transform: translate(0px, 0px)
+    opacity: 1
+    animation-timing-function: linear
+
+@keyframes sperm-3
+  0%
+    transform: translate(90px, 50px)
+    opacity: 0
+    animation-timing-function: ease-out
+  100%
+    transform: translate(0px, 0px)
+    opacity: 1
+    animation-timing-function: linear
+
+@keyframes sperm-4
+  0%
+    transform: translate(80px, 40px)
+    opacity: 0
+    animation-timing-function: ease-out
+  100%
+    transform: translate(0px, 0px)
+    opacity: 1
+    animation-timing-function: linear
+
+@keyframes sperm-5
+  0%
+    transform: translate(80px, 40px)
+    opacity: 0
+    animation-timing-function: ease-out
+  100%
+    transform: translate(0px, 0px)
     opacity: 1
     animation-timing-function: linear

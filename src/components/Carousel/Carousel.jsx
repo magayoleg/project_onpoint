@@ -30,11 +30,9 @@ const Carousel = ({ children }) => {
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
     if (isRightSwipe && activeIndex > 0) {
-      console.log(activeIndex);
       setActiveIndex(activeIndex - 1);
     }
     if (isLeftSwipe && activeIndex < children.length - 1) {
-      console.log(distance);
       setActiveIndex(activeIndex + 1);
     }
   };
@@ -54,7 +52,7 @@ const Carousel = ({ children }) => {
               onTouchStart={start}
               onTouchMove={move}
             >
-              {React.cloneElement(child, { updateIndex })}
+              {React.cloneElement(child, { updateIndex, activeIndex })}
             </div>
           );
         })}

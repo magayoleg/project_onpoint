@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './SecondSlider.sass';
 
-const SecondSlider = () => {
+const SecondSlider = ({ activeIndex }) => {
   const startScroll = 270;
   const endScroll = 630;
   let blockScroll = document.getElementById('scroll');
@@ -20,16 +20,6 @@ const SecondSlider = () => {
     setDistance(sizeDistance);
   };
 
-  // function isOnVisibleSpace(element) {
-  //   var bodyHeight = window.innerHeight;
-  //   var elemRect = element.getBoundingClientRect();
-  //   var offset   = elemRect.top;// - bodyRect.top;
-  //   if(offset<0) return false;
-  //   if(offset>bodyHeight) return false;
-  //   return true;
-  // }
-  // var result = isOnVisibleSpace(blockScroll);
-  // console.log(document.getElementById('secondSlider'));
   return (
     <div
       id="secondSlider"
@@ -89,13 +79,15 @@ const SecondSlider = () => {
           </div>
         </div>
       </div>
-      <div className="second__animation">
+      <div
+        className="second__animation"
+        style={{ display: activeIndex ? 'block' : 'none' }}
+      >
         <img src="./images/sperm_1.png" alt="sperm_1.png" />
-        {/* <img src="./images/sperm_2.png" alt="sperm_2.png" />
+        <img src="./images/sperm_2.png" alt="sperm_2.png" />
         <img src="./images/sperm_3.png" alt="sperm_3.png" />
         <img src="./images/sperm_4.png" alt="sperm_4.png" />
         <img src="./images/sperm_5.png" alt="sperm_5.png" />
-        */}
       </div>
     </div>
   );
