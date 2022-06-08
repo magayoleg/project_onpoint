@@ -8,10 +8,8 @@ function App() {
   return (
     <div className="app">
       <Carousel>
-        {/* <FirstSlider />
+        <FirstSlider />
         <SecondSlider />
-        <FirstSlider /> */}
-        <ThirdSlider />
         <ThirdSlider />
       </Carousel>
     </div>

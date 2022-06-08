@@ -11,7 +11,10 @@ const Navigation = ({ updateIndex }) => {
         <img src="./icons/home.png" alt="home.png" />
       </button>
       <div></div>
-      <a href='#' className="nav__project">
+      <a
+        href='https://github.com/magayoleg/project_onpoint' className="nav__project"
+        target='_blank' rel="noreferrer"
+      >
         <img src="./icons/project.png" alt="project.png" />
       </a>
     </div>
