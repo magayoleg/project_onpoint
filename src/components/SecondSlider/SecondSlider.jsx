@@ -38,7 +38,7 @@ const SecondSlider = ({ activeIndex }) => {
         </button>
       </div>
       <div className="second__info info">
-        <div className="info__title info__title">ТЕКСТ СООБЩЕНИЯ</div>
+        <div className="info__title info__title_width">ТЕКСТ СООБЩЕНИЯ</div>
         <div className="info__description">
           <div className="info__wrapper">
             <div id="scroll" className="info__scroll">

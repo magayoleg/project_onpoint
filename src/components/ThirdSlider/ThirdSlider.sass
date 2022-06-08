@@ -1,0 +1,333 @@
+@import ../../_variables
+
+.third
+  width: 100%
+  height: 100vh
+  background-size: cover
+  display: block
+  .info
+    position: absolute
+    top: 169px
+    left: 351px
+  &__cards-wrap
+    position: absolute
+    top: 379px
+    left: 222px
+
+.info
+  &__title_letter-spacing
+    letter-spacing: 2px
+  &__title_z-index
+    z-index: 30
+  &__brend
+    font-size: 95px
+    font-family: $font-medium
+    letter-spacing: 14px
+    margin-left: -6px
+    line-height: 130px
+    z-index: 30
+    span
+      font-family: $font-bold
+
+.cards
+  white-space: normal
+  display: flex
+  justify-content: center
+  column-gap: 66px
+  &__box-1
+    width: 414px
+    height: 265px
+    background-color: #fff
+    border-radius: 40px
+    padding: 53px 47px 0px 130px
+    box-shadow: 0px 0px 20px 1px #4e4e4e44
+    font-size: 24px
+    line-height: 30px
+    font-family: $font-medium
+    &::before
+      content: ''
+      background-image: url('../../../public/icons/dinner.png')
+      background-size: 100% 100%
+      height: 63px
+      width: 68px
+      position: absolute
+      top: 0
+      transform: translateY(-50%)
+      left: 129px
+  &__box-2
+    width: 263px
+    height: 150px
+    background-color: #fff
+    border-radius: 40px
+    padding: 53px 89px 0px 42px
+    box-shadow: 0px 0px 20px 1px #4e4e4e44
+    font-size: 24px
+    line-height: 30px
+    font-family: $font-medium
+    &::before
+      content: ''
+      background-image: url('../../../public/icons/calendar.png')
+      background-size: 100% 100%
+      height: 58px
+      width: 70px
+      position: absolute
+      top: 0
+      transform: translateY(-50%)
+      left: 40px
+
+.button-plus
+  width: 264px
+  height: 81px
+  border-radius: 40px
+  background-color: #ff6a9f
+  border: none
+  font-size: 27px
+  padding-left: 40px
+  top: 75px
+  left: -62px
+  z-index: 1
+  &::before
+    content: ''
+    background-image: url('../../../public/icons/plus.png')
+    background-size: 100% 100%
+    height: 55px
+    width: 55px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 15px
+
+.modal
+  width: 823px
+  height: 573px
+  position: absolute
+  top: 108px
+  left: 141px
+  z-index: 20
+  background-color: #fff
+  border-radius: 40px
+  &__wrapper
+    height: 100vh
+    width: 100%
+    position: absolute
+    margin: 0
+    padding: 0
+    top: 0px
+    opacity: 0
+  &__active
+    background-color: #0000008a
+    z-index: 20
+    opacity: 1
+    transition: opacity 1s ease
+  &__list
+    position: absolute
+    top: 190px
+    left: 211px
+    padding-left: 0px
+    list-style: none
+    width: 500px
+    white-space: normal
+    li
+      font-size: 25px
+      font-family: $font-medium
+      margin-top: 55px
+      &:nth-child(1)::before
+        content: '01'
+        position: absolute
+        top: -35px
+        z-index: 20
+        color: #8cc9e8
+        font-family: $font-bold
+      &:nth-child(2)::before
+        content: '02'
+        position: absolute
+        top: -35px
+        z-index: 20
+        color: #8cc9e8
+        font-family: $font-bold
+      &:nth-child(3)::before
+        content: '03'
+        position: absolute
+        top: -35px
+        z-index: 20
+        color: #8cc9e8
+        font-family: $font-bold
+  &__close
+    position: absolute
+    top: 30px
+    right: 30px 
+    padding: 0
+    background: none
+    border: none
+    width: 50px
+    height: 50px
+    img
+      width: 35px
+
+.bottle
+  position: relative
+  height: 100vh
+  &>img
+    position: absolute
+    bottom: 0px
+    left: 50px
+    z-index: 30
+
+.bottle__animation
+  position: relative
+  height: 100vh
+  img
+    position: absolute
+    &:nth-child(1) 
+      top: 212px
+      left: 77px
+      z-index: 25
+      animation: bubble-1 10s infinite
+    &:nth-child(2)
+      top: 317px
+      left: 186px
+      z-index: 25
+      animation: bubble-2 10s infinite
+    &:nth-child(3)
+      top: 65px
+      left: 197px
+      z-index: 25
+      animation: bubble-3 10s infinite
+    &:nth-child(4)
+      top: 605px
+      left: 270px
+      z-index: 25
+      animation: bubble-4 10s infinite
+    &:nth-child(5)
+      top: 140px
+      left: 170px
+      z-index: 30
+      animation: bubble-5 10s infinite alternate
+    &:nth-child(6)
+      top: 690px
+      left: 170px
+      z-index: 30
+      animation: bubble-6 7s infinite alternate
+    &:nth-child(7)
+      top: 453px
+      left: 10px
+      z-index: 30
+      animation: bubble-7 4s infinite alternate
+    &:nth-child(8)
+      top: 553px
+      left: 25px
+      z-index: 30
+      animation: bubble-8 4s infinite alternate
+
+@keyframes bubble-1
+  0%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+  25%
+    transform: translate(30px, 20px)
+    animation-timing-function: linear
+  50%
+    transform: translate(30px, -20px)
+    animation-timing-function: linear
+  75%
+    transform: translate(30px, -50px)
+    animation-timing-function: linear
+  100%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+
+@keyframes bubble-2
+  0%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+  25%
+    transform: scale(1.1, 1.1) translate(30px, 30px)
+    animation-timing-function: linear
+  50%
+    transform: scale(0.8, 0.8) translate(30px, -20px)
+    animation-timing-function: linear
+  75%
+    transform: translate(30px, -50px)
+    animation-timing-function: linear
+  100%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+
+@keyframes bubble-3
+  0%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+  25%
+    transform: translate(20px, 20px)
+    animation-timing-function: linear
+  50%
+    transform: translate(20px, -10px)
+    animation-timing-function: linear
+  75%
+    transform: translate(0px, -10px)
+    animation-timing-function: linear
+  100%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+
+@keyframes bubble-4
+  0%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+  50%
+    transform: scale(0.9, 0.9) translate(-20px, -20px)
+    animation-timing-function: linear
+  100%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+
+@keyframes bubble-5
+  0%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+  25%
+    transform: scale(1, 1) translate(20px, 20px)
+    animation-timing-function: linear
+  50%
+    transform: scale(0.9, 0.9) translate(20px, -10px)
+    animation-timing-function: linear
+  75%
+    transform: translate(30px, -50px)
+    animation-timing-function: linear
+  100%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+
+@keyframes bubble-6
+  0%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+  50%
+    transform: scale(0.8, 0.8) translate(20px, 20px)
+    animation-timing-function: linear
+  100%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+
+@keyframes bubble-7
+  0%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+  50%
+    transform: scale(0.8, 0.8) translate(-10px, -10px)
+    animation-timing-function: linear
+  100%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+
+@keyframes bubble-8
+  0%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+  50%
+    transform: scale(0.8, 0.8) translate(20px, -20px)
+    animation-timing-function: linear
+  100%
+    transform: translate(0px, 0px)
+    animation-timing-function: linear
+

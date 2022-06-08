@@ -11,9 +11,9 @@ const Navigation = ({ updateIndex }) => {
         <img src="./icons/home.png" alt="home.png" />
       </button>
       <div></div>
-      <button type="button" className="nav__project">
+      <a href='#' className="nav__project">
         <img src="./icons/project.png" alt="project.png" />
-      </button>
+      </a>
     </div>
   );
 };

@@ -3,7 +3,6 @@ import './FirstSlider.sass';
 const FirstSlider = ({ updateIndex }) => {
   return (
     <div className="first" style={{ backgroundImage: 'url(./images/bg.png)' }}
-    
     >
       <div className="first__info info">
         <div className="info__title">ПРИВЕТ,</div>
